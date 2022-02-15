@@ -128,6 +128,10 @@ hr{
     margin: 0.5rem 1rem;
 }
 
+.profile{
+    margin-bottom: 0.5rem;
+}
+
 .profile > img{
     background-color: rgb(113 113 113);
     color: white;
@@ -148,35 +152,220 @@ hr{
 
 
 
-
+/* header section start */
 
 header{
-    height: 10vh;
-    width: 100%;
+    /* height: 10vh; */
+    /* width: 100%; */
     background-color: rgb(8, 11, 18);
-    z-index: 1;
+    z-index: 2;
     display: flex;
-    flex-shrink: 1;
-}
-
-main{
-    height: 90vh;
-    width: 100%;
-    background-color: rgb(20 25 34);
-    display: flex;
-    flex-shrink: 1;
-    
-}
-
-footer{
-    height: 10vh;
-    width: 100vw;
-    background-color: rgb(40, 40, 40);
-    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     flex-shrink: 0;
 }
 
+header button{
+    background-color: rgb(8, 11, 18);
+    padding: 0.6rem 1.2rem;
+    margin-right: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    border-color: white;
+    border-radius: 3rem ;
+    cursor: pointer;
+}
 
+header button:hover{
+    transform: scale(1.1);
+}
+
+/* header section end */
+
+/* main section start */
+
+main{
+    /* height: 100vh; */
+    width: 100vw;
+    background-color: rgb(20 25 34);
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+}
+
+.main-nav > ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.main-nav li{
+    list-style-type: none;
+}
+
+.main-nav li > a{
+    text-decoration: none;
+    color: rgb(113 113 113);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 1.5rem;
+}
+
+.main-nav a:hover{
+    color: white;
+}
+
+.main-nav a:active{
+    text-decoration: underline 2px solid greenyellow;
+}
+
+.wrapper-recently-played{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.recently-played-section > p{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.recently-played-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.recently-played-img{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.recently-played-title > p{
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+.recently-played-sub-title > p{
+    color: rgb(113 113 113);
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+
+
+
+/* footer section start */
+
+footer{
+    /* width: 100vw; */
+    /* height: 100%; */
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    padding-top: 1.5rem;
+    padding-bottom: 1.4rem;
+}
+
+.footer-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left-text > p:first-of-type{
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer-left-text > p:last-of-type{
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(113 113 113)
+}
+
+.footer-left > img{
+    width: 35px;
+    height: 35px;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.footer-left-icons{
+    margin-left: 4rem;
+    
+}
+
+.footer-left-icons > span{
+    color: rgb(113 113 113);
+    margin-right: 0.3rem;
+}
+
+.footer-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.footer-center-icons-top > span{
+    color: white;
+    margin-left: 2rem;
+}
+
+.footer-center-icons-top span:hover i{
+    transform: scale(1.4);
+}
+
+.footer-center-bottom > span{
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+    padding: 0 1rem;
+}
+
+.footer-center-bottom > input{
+    width: 400px;
+    margin-top: 0.5rem;
+}
+
+.footer-right-icons > span{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding: 0 1rem;
+}
+
+.footer-right-icons > input{
+    width: 100px;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/* footer end */
 
 /* main{
     display: flex;
