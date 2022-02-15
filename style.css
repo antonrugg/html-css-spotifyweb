@@ -9,11 +9,176 @@
 rgb(8 11 18); nav top
 background: rgb(20 25 34); main
 rgb(40 40 40); bottom nav footer */
+
 .wrapper{
     display: flex;
 }
 
+
+/* aside bar section */
+aside{
+    background-color: rgb(0, 0, 0);
+    /* width: 15vw; */
+    /* height: 90vh; */
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    
+}
+
+aside > div{
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    margin-right: 4rem;
+}
+
+aside .logo-wrapper{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+    
+}
+
+.icon-wrapper{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-wrapper:active{
+    border-left: 2px solid greenyellow;
+}
+
+
+
+.icon-wrapper > img{
+    width: 20px;
+    height: 20px;
+}
+
+.icon-wrapper > span{
+    color: rgb(113 113 113);
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 0.2rem;
+}
+
+.icon-wrapper > span:hover{
+    color: white;
+}
+
+.icon-wrapper > p{
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.icon-wrapper li{
+    list-style-type: none;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+
+
+.icon-wrapper a{
+    text-decoration: none;
+    color: rgb(113 113 113);
+}
+
+.icon-wrapper a:hover{
+    color: white;
+}
+
+.add-playlist{
+    height: 35px;
+    width: 35px;
+    background-color: rgb(113 113 113);
+    color: black;
+    font-size: 40px;
+    margin-right: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-playlist:hover{
+    background-color: white;
+}
+
+.playlist > span{
+    font-size: 16px;
+}
+
+.install-app{
+    margin-top: 7rem;
+}
+
+.install-app{
+    cursor: pointer;
+}
+
+hr{
+    border-color: rgb(113 113 113);
+    margin: 0.5rem 1rem;
+}
+
+.profile > img{
+    background-color: rgb(113 113 113);
+    color: white;
+    border-radius: 50%;
+}
+
+.profile > span{
+    color: white;
+}
+
+/* aside bar section end */
+
+
+
+
+
+
+
+
+
+
+
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(8, 11, 18);
+    z-index: 1;
+    display: flex;
+    flex-shrink: 1;
+}
+
 main{
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(20 25 34);
+    display: flex;
+    flex-shrink: 1;
+    
+}
+
+footer{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    flex-shrink: 0;
+}
+
+
+
+/* main{
     display: flex;
     justify-content: flex-end;
     height: 100vh;
@@ -31,10 +196,11 @@ header{
     z-index: 1;
     background-color: rgb(8, 11, 18);
     display: flex;   
+    flex-shrink: 0;
 }
 
 /* aside content  */
-aside{
+/* aside{
     height: 90vh;
     width: 15vw;
     background-color: rgb(0, 0, 0);
@@ -44,19 +210,38 @@ aside{
     z-index: 2;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-shrink: 0;
 }
 
-aside > img.logo{
-    height: 10%;
-    width: 60%;
+aside > .logo-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
 }
+
+aside .logo{
+    height: 10vh;
+    width: 80%;
+}
+
+
+aside span{
+    color: white;
+}
+
+.icon-aside-wrapper{
+    display: flex;
+    width: 10vw;
+    height: 3vh;
+} */ 
+
+
 
 
 
 /* aside content end */
 
-footer{
+/* footer{
     height: 10vh;
     width: 100vw;
     background-color: rgb(40, 40, 40);
@@ -64,4 +249,4 @@ footer{
     left: 0;
     bottom: 0;
 }
-
+ */
