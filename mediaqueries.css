@@ -1,0 +1,23 @@
+@media screen and (max-width: 552px) {
+
+
+    .logo-wrapper > img:first-of-type{
+        display: none;
+    }
+
+    .logo-wrapper > img:last-of-type{
+        display: flex;
+    }
+
+    aside > div{
+        margin-right: 0;
+        padding-right: 1rem;
+    }
+
+    .icon-wrapper span, .icon-wrapper.playlist, .icon-wrapper ul, hr{
+        display: none;
+        margin-right: 0;
+        padding-right: 0;
+        align-items: center;
+    }
+}
