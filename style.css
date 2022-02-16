@@ -219,10 +219,12 @@ main{
     display: flex;
     justify-content: center;
     margin-top: 5rem;
+    flex-wrap: wrap;
 }
 
 .main-nav li{
     list-style-type: none;
+    margin-bottom: 1rem;
 }
 
 .main-nav li > a{
@@ -256,7 +258,7 @@ main{
 .wrapper-recently-played.start{
     justify-content: flex-start;
     gap: 1rem;
-    margin-left: 2rem;
+    /* margin-left: 1rem; */
 }
 
 .recently-played-section > p{
@@ -272,6 +274,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     /* margin: 0 0.8rem; */
    
     /* width: 100px; */
@@ -304,11 +307,20 @@ main{
     font-size: 12px;
     font-weight: 500;
     margin-top: 0.5rem;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     align-self: center;
     /* max-width: 100px; */
     min-width: 100px;
     /* text-align: center; */
+}
+
+.recently-played-sub-title.ml-one> p{
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.recently-played-container:first-of-type{
+    margin-left: 1rem;
 }
 
 .recently-played-sub-title:hover p{
