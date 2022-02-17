@@ -266,7 +266,9 @@ main{
 }
 
 .main-nav a:active{
-    text-decoration: underline 2px solid greenyellow;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid greenyellow;
+    
 }
 
 .wrapper-recently-played{
@@ -314,7 +316,8 @@ main{
 }
 
 .layer-player{
-    height: 100%;
+    margin-top: 1rem;
+    height: 94%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
@@ -332,6 +335,10 @@ main{
     border: 7px solid;
     padding: 0.6rem;
     padding-left: 0.8rem;
+}
+
+.layer-player.fav{
+    border-radius: 50%;
 }
 
 .recently-played-img:hover .layer-player{
