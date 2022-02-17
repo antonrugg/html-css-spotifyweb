@@ -308,7 +308,34 @@ main{
 
 .recently-played-img{
     display: flex;
+    position: relative;
+    cursor: pointer;
     /* justify-content: space-around; */
+}
+
+.layer-player{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    display: none;
+}
+
+.layer-player > i{
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+    color: white;
+    font-size: 40px;
+    border-radius: 50%;
+    border-color: white;
+    border: 7px solid;
+    padding: 0.6rem;
+    padding-left: 0.8rem;
+}
+
+.recently-played-img:hover .layer-player{
+    display: flex;
 }
 
 .recently-played-img > img{
